@@ -1,0 +1,48 @@
+Styling Text and Fonts in CSS
+CSS provides a wide range of properties for customizing the appearance of text on a web page. Here are some common properties and an example demonstrating their usage:
+
+Properties
+font-family: Sets the font family to use for text.
+font-size: Specifies the size of the font.
+font-weight: Controls the boldness of the font (e.g., normal, bold, bolder).
+text-align: Aligns the text within its container (e.g., left, center, right).
+color: Sets the color of the text.
+text-decoration: Adds decorations like underline or line-through.
+Example HTML and CSS
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Styling Example</title>
+    <style>
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            font-family: Verdana, sans-serif;
+            font-size: 18px;
+            color: #666666;
+        }
+
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph of text.</p>
+    <p>This is another paragraph with <a href="#">a link</a>.</p>
+</body>
+</html>
+
+Explanation
+Heading: The <h1> element uses the Arial font family, is 36 pixels in size, is bold, and is centered.
+Paragraph: The <p> elements use the Verdana font family, are 18 pixels in size, and have a gray color.
+Link: The <a> element has a blue color and is underlined.
+You can experiment with different values for these properties to achieve the desired appearance for your text. For example, you can use font-weight: 700 for a bolder font or text-decoration: none to remove the underline from a link.

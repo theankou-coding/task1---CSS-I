@@ -1,0 +1,57 @@
+<!-- How to Use Google Fonts in an HTML Document
+Choose a Font from Google Fonts
+
+Visit Google Fonts and select the font(s) you want to use.
+Click "Select this style" and copy the provided <link> tag or the @import code.
+Integrate the Font in HTML
+
+Add the <link> tag to the <head> section of your HTML document.
+Use the font-family CSS property to apply the font to specific elements. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Fonts Example</title>
+
+    <!-- Google Fonts Integration -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Using Google Fonts</h1>
+    <p>
+        This is a paragraph styled with the <code>Roboto</code> font. The heading above uses the
+        <code>Playfair Display</code> font. Google Fonts makes it easy to incorporate beautiful typography
+        into your website.
+    </p>
+
+</body>
+
+</html>
+
+<!-- Summary
+Google Fonts allow you to integrate custom fonts from Google’s library, making typography more visually appealing.
+Favicons improve website recognition by providing a small icon in the browser tab.
+Both features can be easily integrated by adding appropriate <link> tags to the <head> section of the HTML document. This ensures a consistent and professional look for your web pages. -->

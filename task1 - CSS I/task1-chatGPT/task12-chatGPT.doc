@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Responsive Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows items to wrap onto the next line */
+            justify-content: space-between;
+            /* Distributes space between items */
+            align-items: stretch;
+            /* Stretches items to fill the container */
+            padding: 20px;
+        }
+
+        .item {
+            background-color: #009688;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 calc(30% - 20px);
+            /* Flex-grow, flex-shrink, and flex-basis */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* Media Query for smaller screens */
+        @media (max-width: 600px) {
+            .item {
+                flex: 1 1 100%;
+                /* Stacks items vertically on small screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- The Flexbox layout model provides a straightforward and powerful way to create responsive layouts. By using properties like flex-direction, justify-content, and align-items, developers can control the alignment and spacing of elements easily, making it an essential tool for modern web design. -->

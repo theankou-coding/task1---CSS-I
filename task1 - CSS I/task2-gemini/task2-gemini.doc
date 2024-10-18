@@ -1,0 +1,96 @@
+Inline, Internal, and External CSS
+There are three main ways to apply CSS styles to HTML elements: inline, internal, and external.
+
+Inline CSS
+Definition: Styles are directly applied to individual HTML elements using the style attribute.
+Example:
+
+<h1 style="color: red; font-size: 36px;">This is a heading</h1>
+
+Advantages:
+Provides granular control over specific elements.
+Can be useful for quick, one-off style changes.
+Disadvantages:
+Makes HTML code less readable and maintainable.
+Difficult to reuse styles across multiple elements.
+Internal CSS
+Definition: Styles are defined within the <head> section of an HTML document using the <style> tag.
+Example:
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal CSS Example</title>
+    <style>
+        h1 {
+            color: blue;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+</body>
+</html>
+Use code with caution.
+
+Advantages:
+Provides better organization and maintainability compared to inline CSS.
+Can be reused for multiple elements within the same document.
+Disadvantages:
+Styles are limited to the specific HTML document.
+Can become difficult to manage for large or complex websites.
+External CSS
+Definition: Styles are defined in a separate CSS file, which is linked to the HTML document using the <link> tag.
+Example:
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>External CSS Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>This is a heading</h1>   
+
+</body>
+</html>
+
+h1 {
+    color: green;
+    font-size: 18px;
+}
+Use code with caution.
+
+Advantages:
+Separates content from presentation, improving code organization and maintainability.
+Can be reused across multiple HTML documents.
+Makes it easier to manage styles for large or complex websites.
+Disadvantages:
+Requires additional HTTP requests to load the CSS file, which can slightly impact page load time.
+Can be more complex to set up for beginners.
+HTML Page Demonstrating All Three Methods:
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Methods Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="color: red; font-size: 36px;">Inline CSS</h1>
+    <h1 style="color: blue; font-size: 24px;">Internal CSS</h1>
+    <h1>External CSS</h1>
+</body>
+</html>
+
+styles.css:
+
+CSS
+h1 {
+    color: green;
+    font-size: 18px;
+}
+
+This example demonstrates how each CSS method can be used to style the same HTML element in different ways. The choice of method depends on the specific needs of the website and the developer's preferences.

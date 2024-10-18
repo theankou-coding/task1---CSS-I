@@ -1,0 +1,34 @@
+<!-- Inline styles are applied directly to individual HTML elements using the style attribute. This method allows you to add CSS properties within the opening tag of an element, impacting only that specific element. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Styles Example</title>
+</head>
+
+<body>
+
+    <h1 style="color: darkblue; text-align: center;">Welcome to Inline Styles</h1>
+
+    <p style="font-size: 18px; line-height: 1.6; color: gray;">
+        This paragraph demonstrates the use of <strong>inline styles</strong>.
+        The font size is 18px, the line height is 1.6, and the text color is gray.
+    </p>
+
+    <button style="background-color: green; color: white; padding: 10px 20px; border: none;">
+        Click Me
+    </button>
+
+    <p style="font-weight: bold; font-style: italic; margin-top: 20px;">
+        This text is styled with bold and italic inline styles.
+    </p>
+
+</body>
+
+</html>
+
+<!-- Conclusion
+While inline styles are convenient for quick styling or testing, they should be used sparingly. In larger projects, external stylesheets offer better organization and maintainability, making it easier to manage consistent styles across multiple pages. -->

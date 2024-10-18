@@ -1,0 +1,54 @@
+CSS Variables (Custom Properties)
+CSS variables (also known as custom properties) are a powerful feature introduced in CSS3 that allows you to define and reuse values throughout your stylesheet. This makes it easier to maintain consistency and make global changes to your design.
+
+How CSS Variables Work
+Define the Variable: Use the -- prefix to define a custom property. For example, --primary-color: blue;.
+Reference the Variable: Use the var() function to reference the variable in other CSS properties. For example, color: var(--primary-color);.
+Example: Using CSS Variables
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Variables Example</title>
+    <style>
+        :root {
+            --primary-color: blue;
+            --secondary-color: red;
+            --font-size: 18px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: var(--font-size);
+        }
+
+        p {
+            color: var(--secondary-color);
+            font-size: var(--font-size);
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+</body>
+</html>
+
+In this example:
+
+We define three custom properties: --primary-color, --secondary-color, and --font-size.
+The h1 and p elements reference these variables for their color and font size.
+Changing Variable Values
+To change the values of the variables, you can modify them in the :root selector or use JavaScript to dynamically update them.
+
+JavaScript
+const root = document.documentElement;
+root.style.setProperty('--primary-color', 'green');
+
+This would change the --primary-color variable to green, and all elements that reference it would be updated accordingly.
+
+Benefits of Using CSS Variables
+Consistency: Easily maintain a consistent look and feel throughout your website.
+Maintainability: Make global changes to your design by modifying the variables.
+Dynamic Styling: Use JavaScript to dynamically update variable values based on user interactions or other conditions.
+By effectively using CSS variables, you can create more flexible, maintainable, and visually appealing stylesheets.

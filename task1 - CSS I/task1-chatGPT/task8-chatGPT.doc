@@ -1,0 +1,95 @@
+<!-- Applying Colors and Backgrounds in CSS
+In CSS, colors can be defined using various formats:
+
+Hexadecimal (#RRGGBB): A six-character code representing red, green, and blue values.
+RGB (rgb(r, g, b)): Specifies the red, green, and blue values between 0–255.
+HSL (hsl(hue, saturation%, lightness%)): A color model based on hue, saturation, and lightness. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors and Backgrounds in CSS</title>
+
+    <style>
+        /* Body with a solid color background */
+        body {
+            background-color: #f0f0f0;
+            /* Light gray using Hex */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header with a linear gradient background */
+        header {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            /* Gradient from left to right */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Section with an RGB background */
+        section {
+            background-color: rgb(173, 216, 230);
+            /* Light blue using RGB */
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* Article with an HSL background */
+        article {
+            background-color: hsl(120, 60%, 70%);
+            /* Light green using HSL */
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* Footer with a background image */
+        footer {
+            background-image: url('background.jpg');
+            background-size: cover;
+            /* Ensures the image covers the entire area */
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Color and Background Demo</h1>
+        <p>Using gradients, RGB, HSL, and images in CSS</p>
+    </header>
+
+    <section>
+        <h2>Section with RGB Background</h2>
+        <p>This section uses a background color defined with the RGB model.</p>
+    </section>
+
+    <article>
+        <h2>Article with HSL Background</h2>
+        <p>This article uses a background color defined with the HSL model.</p>
+    </article>
+
+    <footer>
+        <p>Footer with Background Image</p>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- Summary
+This example demonstrates:
+
+Solid colors with different formats: Hex, RGB, and HSL.
+Gradient backgrounds for smooth transitions between colors.
+Image backgrounds with proper scaling and positioning. -->

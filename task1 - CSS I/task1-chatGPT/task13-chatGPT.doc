@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Example</title>
+    <style>
+        /* Defining CSS Variables */
+        :root {
+            --primary-color: #3498db;
+            /* Main color */
+            --secondary-color: #2ecc71;
+            /* Secondary color */
+            --text-color: #333;
+            /* Text color */
+            --font-size: 16px;
+            /* Base font size */
+            --padding: 10px;
+            /* Base padding */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: calc(var(--font-size) * 2);
+        }
+
+        p {
+            color: var(--text-color);
+            font-size: var(--font-size);
+            padding: var(--padding);
+        }
+
+        .button {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: var(--padding);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Change Variable Values for Dark Mode */
+        .dark-mode {
+            --primary-color: #e74c3c;
+            /* New primary color */
+            --secondary-color: #8e44ad;
+            /* New secondary color */
+            --text-color: #ecf0f1;
+            /* New text color */
+            --padding: 15px;
+            /* New padding */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to CSS Variables Example</h1>
+    <p>This paragraph uses CSS variables for consistent styling.</p>
+    <button class="button">Click Me</button>
+
+    <h2>Switch to Dark Mode</h2>
+    <button onclick="document.body.classList.toggle('dark-mode')">Toggle Dark Mode</button>
+
+</body>
+
+</html>
+
+<!-- Benefits of Using CSS Variables
+Consistency: They ensure consistent styling across various elements since the same variable can be reused multiple times.
+Dynamic Theming: CSS variables allow for easy implementation of themes, enabling quick switching between styles (like light and dark modes).
+Maintainability: Updating a variable in one location changes its value everywhere it’s used, reducing the risk of inconsistencies.
+Improved Readability: They enhance the readability of CSS, making it clear what certain colors or sizes represent.
+CSS variables are a powerful tool that enhances the flexibility and maintainability of stylesheets in modern web development.
+ -->

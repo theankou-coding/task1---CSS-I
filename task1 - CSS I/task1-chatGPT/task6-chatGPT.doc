@@ -1,0 +1,86 @@
+<!-- CSS provides several properties to style the appearance of text. These include:
+
+font-family: Specifies the typeface (e.g., Arial, Times New Roman).
+font-size: Defines the size of the text.
+font-weight: Controls the thickness or boldness of the text.
+text-align: Aligns text horizontally within its container.
+color: Changes the text color.
+line-height: Adjusts the spacing between lines of text.
+text-decoration: Modifies the appearance of links (e.g., underline). -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Font Styling Example</title>
+
+    <style>
+        /* Styling Headings */
+        h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            color: darkblue;
+        }
+
+        h2 {
+            font-family: 'Georgia', serif;
+            font-size: 28px;
+            font-weight: normal;
+            text-align: left;
+            color: darkgreen;
+        }
+
+        /* Styling Paragraphs */
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+            color: #333;
+        }
+
+        /* Styling Links */
+        a {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to CSS Text Styling</h1>
+
+    <h2>Heading 2 Example</h2>
+    <p>
+        This is a paragraph styled with the <code>font-family</code>, <code>font-size</code>, and
+        <code>line-height</code> properties.
+        The text is aligned using <code>text-align: justify</code> to ensure it is evenly distributed across the width
+        of the container.
+    </p>
+
+    <p>
+        The <strong>font-weight</strong> property is used to make this text bold, and the <em>font-style</em> property
+        makes this text italic.
+    </p>
+
+    <a href="#">This is a styled link</a>
+    <p>Hover over the link to see the effect of the <code>:hover</code> pseudo-class.</p>
+
+</body>
+
+</html>
+
+<!-- Summary
+This example demonstrates how to style a variety of text elements using CSS. We applied different fonts, sizes, colors, and alignment to headings, paragraphs, and links. Styling text properly can improve readability and the visual appeal of a webpage. The hover effect on the link enhances user interaction. -->

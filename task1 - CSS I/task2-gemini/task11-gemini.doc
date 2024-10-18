@@ -1,0 +1,65 @@
+Tables vs. <div> Elements for Layout
+Tables were originally designed for presenting tabular data, but they were often misused for layout purposes. While possible, using tables for layout can make the HTML and CSS code complex and difficult to maintain.
+
+<div> elements are more versatile and are generally preferred for layout. They can be styled with CSS to create various layouts and structures.
+
+Example HTML Document
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            background-color: lightblue;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Using Tables for Layout</h2>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+    </table>
+
+    <h2>Using `<div>` Elements for Layout</h2>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
+
+When to Use Tables vs. <div> Elements
+Tables:
+Use tables for presenting data in a tabular format.
+Avoid using tables for layout unless you need to create complex table structures with headers, footers, and rowspans/colspans.
+<div> Elements:
+Use <div> elements for most layout purposes, as they are more flexible and easier to style.
+Use flexbox or grid layout to create complex layouts.
+In summary, while tables can be used for layout, it's generally recommended to use <div> elements and CSS for creating flexible and maintainable layouts. This approach is more semantic and aligns better with modern web development practices.

@@ -1,0 +1,126 @@
+<!-- Aligning elements in CSS can be accomplished using various techniques, depending on the desired layout. The main display properties that control alignment include:
+
+Block: Elements that take up the full width available and start on a new line (e.g., <div>, <h1>).
+Inline: Elements that do not start on a new line and only take up as much width as necessary (e.g., <span>, <a>).
+Inline-block: Elements that behave like inline elements but respect width and height settings (e.g., <img>, <button>).
+Flex: A modern layout model that allows for responsive alignment of child elements in a container. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Alignment Techniques</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Block-level elements */
+        .block {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        /* Inline elements */
+        .inline {
+            background-color: #ffcccb;
+            padding: 10px;
+            margin-right: 5px;
+        }
+
+        /* Inline-block elements */
+        .inline-block {
+            background-color: #add8e6;
+            padding: 10px;
+            margin-right: 5px;
+            display: inline-block;
+            /* Allows setting width and height */
+        }
+
+        /* Flex container */
+        .flex-container {
+            display: flex;
+            /* Enables flex layout */
+            justify-content: space-between;
+            /* Distributes space between items */
+            align-items: center;
+            /* Aligns items vertically center */
+            background-color: #d3d3d3;
+            padding: 20px;
+        }
+
+        /* Text alignment */
+        .text-align {
+            text-align: center;
+            /* Centers text within the block */
+            padding: 20px;
+            background-color: #e6e6fa;
+        }
+
+        /* Vertical alignment */
+        .vertical-align {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            /* Vertical alignment using flex */
+            justify-content: center;
+            /* Centering horizontally */
+            background-color: #ffe4e1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Alignment Techniques</h1>
+
+    <div class="block">
+        <h2>Block Level Element</h2>
+        <p>This is a block-level element. It takes up the full width of its parent.</p>
+    </div>
+
+    <div class="block">
+        <h2>Inline Elements</h2>
+        <span class="inline">Inline Element 1</span>
+        <span class="inline">Inline Element 2</span>
+        <span class="inline">Inline Element 3</span>
+        <p>Inline elements do not start on a new line.</p>
+    </div>
+
+    <div class="block">
+        <h2>Inline-Block Elements</h2>
+        <div class="inline-block">Inline-Block 1</div>
+        <div class="inline-block">Inline-Block 2</div>
+        <div class="inline-block">Inline-Block 3</div>
+        <p>Inline-block elements respect width and height settings while remaining on the same line.</p>
+    </div>
+
+    <div class="flex-container">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <div class="text-align">
+        <h2>Text Alignment</h2>
+        <p>This text is centered within its block using <code>text-align: center;</code>.</p>
+    </div>
+
+    <div class="vertical-align">
+        <h2>Vertical Alignment</h2>
+        <p>This text is vertically centered within a flex container.</p>
+    </div>
+
+</body>
+
+</html>
+
+<!-- Summary
+This example demonstrates different alignment techniques in CSS, including the use of block, inline, inline-block, and flex properties. By utilizing these properties,
+ you can achieve precise control over the layout and alignment of elements in a webpage, enhancing its visual structure and usability. -->

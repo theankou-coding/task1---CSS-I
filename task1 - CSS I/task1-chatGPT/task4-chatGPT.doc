@@ -1,0 +1,73 @@
+<!-- Common CSS Issues and How to Debug Them
+Some common CSS issues include:
+
+Specificity conflicts: Styles not being applied due to competing rules.
+Missing or incorrect selectors: CSS rules not matching the desired elements.
+Inheritance issues: Styles not propagating as expected.
+Browser compatibility issues: CSS behaves differently across browsers.
+Incorrect syntax: Missing semicolons or curly braces.
+============================================================================
+Using Browser Developer Tools for CSS Debugging (Step-by-Step)
+Open Developer Tools:
+
+In Chrome: Right-click on the page → Inspect.
+In Firefox: Right-click on the page → Inspect Element.
+Alternatively, press F12 or Ctrl+Shift+I (Windows) / Cmd+Opt+I (Mac).
+Inspect the Element:
+
+Use the Elements tab to select the element you want to inspect.
+The HTML structure is shown on the left, and the CSS rules on the right.
+Identify CSS Issues:
+
+Look for overridden styles (grayed-out properties).
+Check for missing styles or rules with low specificity.
+Modify CSS Live:
+
+In the Styles pane, you can add, edit, or remove CSS properties and see the changes in real time.
+Check for Errors:
+
+Use the Console tab for any CSS-related warnings or errors.
+Make sure all files (CSS, fonts, images) are loaded correctly under the Network tab.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Debugging Example</title>
+
+    <style>
+        /* Element Selector */
+        h1 {
+            color: blue;
+            /* This is being applied */
+        }
+
+        /* Class Selector */
+        .title {
+            color: green;
+            /* This is not working */
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">CSS Debugging Example</h1>
+</body>
+
+</html>
+
+<!-- Summary
+Using browser developer tools, we:
+
+Inspected the element to find the conflicting CSS rules.
+Identified that the element selector was overriding the class selector.
+Increased the specificity to apply the correct style.
+Browser developer tools are essential for:
+
+Inspecting CSS rules to see what's applied or overridden.
+Testing changes live without modifying the source code.
+Identifying errors or warnings in the Console tab. -->

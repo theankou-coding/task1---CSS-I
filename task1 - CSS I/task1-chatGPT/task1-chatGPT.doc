@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CSS Example</title>
+
+    <style>
+        /* Styling the body */
+        body {
+            background-color: #f0f8ff;
+            /* Light blue background */
+            color: #333;
+            /* Dark grey text color */
+            font-size: 18px;
+            /* Font size set to 18px */
+            font-family: Arial, sans-serif;
+            /* Use Arial or sans-serif */
+        }
+
+        /* Styling the heading */
+        h1 {
+            color: #00509e;
+            /* Blue color for heading text */
+        }
+
+        /* Styling the paragraph */
+        p {
+            color: #444;
+            /* Slightly lighter grey for paragraph text */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to My Webpage</h1>
+    <p>This is a basic example of HTML with embedded CSS styling.</p>
+</body>
+
+</html>
+
+<!-- Summary and Explanation
+1. Single File Structure:
+We use the <style> tag inside the <head> section to define the CSS. This is known as embedded CSS.
+The HTML structure remains in the <body> section with the heading (<h1>) and a paragraph (<p>).
+2. How the CSS Works:
+body: Sets the background color to light blue (#f0f8ff), text color to dark grey (#333), font size to 18px, and the font family to Arial or sans-serif.
+h1: Changes the heading text color to blue (#00509e).
+p: Sets the paragraph text color to a lighter grey (#444).
+3. Result in Browser:
+When this file is opened, the page will display:
+A light blue background.
+The heading text will be blue, and the paragraph text will appear in light grey.
+Both the heading and paragraph text will use Arial or a fallback sans-serif font.
+This approach simplifies the setup since all styles and content are in one file. However, for larger projects, separating CSS into external files helps with organization and reuse. -->

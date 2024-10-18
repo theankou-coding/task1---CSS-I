@@ -1,0 +1,95 @@
+<!-- Differences between Inline, Internal, and External CSS
+Inline CSS:
+CSS rules are applied directly within an HTML element using the style attribute.
+
+Advantage: Quick to apply for small, one-time changes.
+Disadvantage: Difficult to maintain and reuse; increases HTML code size.
+Internal CSS:
+CSS rules are placed inside a <style> tag within the <head> section of the HTML page.
+
+Advantage: Useful for styling a single page without affecting others.
+Disadvantage: Not reusable across multiple pages.
+External CSS:
+CSS is written in a separate file with a .css extension and linked to the HTML file.
+
+Advantage: Styles can be reused across multiple pages, improving maintainability.
+Disadvantage: Requires an extra HTTP request to load the CSS file, which may slightly affect page load time. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Methods Example</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: #f0f8ff;
+            /* Light blue background */
+            font-family: Arial, sans-serif;
+            /* Set the font family */
+        }
+
+        h1 {
+            color: #00509e;
+            /* Blue heading text */
+            text-align: center;
+            /* Center-align the heading */
+        }
+
+        p.internal {
+            color: #444;
+            /* Grey color for internal paragraph */
+            font-size: 18px;
+            /* Font size for internal paragraph */
+        }
+    </style>
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Demonstrating CSS Methods</h1>
+
+    <!-- Inline CSS -->
+    <p style="color: green; font-size: 20px;">
+        This paragraph uses <strong>inline CSS</strong> for styling.
+    </p>
+
+    <!-- Internal CSS -->
+    <p class="internal">
+        This paragraph is styled using <strong>internal CSS</strong>.
+    </p>
+
+    <!-- External CSS -->
+    <p class="external">
+        This paragraph is styled using <strong>external CSS</strong>.
+    </p>
+</body>
+
+</html>
+
+<!-- 
+============================================================================
+Advantages and Disadvantages
+Method	Advantages	Disadvantages
+Inline CSS	- Quick to apply for single elements
+- No need for separate files	- Not reusable
+- Hard to maintain with large projects
+Internal CSS	- Good for single-page styles
+- Keeps CSS centralized for the page	- Not reusable across multiple pages
+- Can bloat the HTML file
+External CSS	- Reusable across multiple pages
+- Keeps HTML clean	- Requires separate HTTP request
+- External file must be loaded
+============================================================================
+Summary
+This example demonstrates the inline, internal, and external CSS methods. Each method has its own use case:
+
+Use inline CSS for quick, one-off styles.
+Use internal CSS for page-specific styling.
+Use external CSS for styles that need to be applied consistently across multiple pages.
+Understanding these differences helps you decide which method to use based on the needs of your project. -->

@@ -1,0 +1,89 @@
+<!-- CSS selectors are patterns used to select and style HTML elements. They define which HTML elements will be affected by a specific set of CSS rules. Selectors allow developers to apply styles based on element names, classes, IDs, attributes, and more.
+
+Types of CSS Selectors
+Element Selector: Targets all elements with a specific HTML tag.
+Class Selector: Targets elements with a specific class name.
+ID Selector: Targets an element with a specific ID.
+Attribute Selector: Targets elements based on their attributes.
+Pseudo-class Selector: Targets elements based on their state (like hover, focus) or their position in the document.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+
+    <style>
+        /* Element selector: Applies to all <h1> elements */
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        /* Class selector: Applies to elements with class "highlight" */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* ID selector: Applies to the element with ID "unique-paragraph" */
+        #unique-paragraph {
+            color: darkgreen;
+            font-size: 20px;
+        }
+
+        /* Attribute selector: Applies to <input> elements with type="email" */
+        input[type="email"] {
+            border: 2px solid black;
+            padding: 8px;
+        }
+
+        /* Pseudo-class selector: Changes link color when hovered */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* Pseudo-class selector: Styles the first child of a list */
+        li:first-child {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Selectors in Action</h1>
+
+    <p>This is a regular paragraph.</p>
+    <p class="highlight">This paragraph is highlighted using a class selector.</p>
+    <p id="unique-paragraph">This paragraph has a unique style using an ID selector.</p>
+
+    <form>
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="Enter your email">
+    </form>
+
+    <a href="#">Hover over this link to see the effect of a pseudo-class selector.</a>
+
+    <ul>
+        <li>First item (styled using <code>:first-child</code> pseudo-class)</li>
+        <li>Second item</li>
+    </ul>
+
+</body>
+
+</html>
+
+<!-- Summary
+This example demonstrates how various CSS selectors can be used to style HTML elements:
+
+Element selectors are general and apply to all instances of an element.
+Class selectors are more specific and allow for reusable styles across multiple elements.
+ID selectors are used for unique elements that need individual styling.
+Attribute selectors allow targeting elements with specific attributes.
+Pseudo-class selectors apply styles to elements in a specific state (like hover) or position (like the first child).
+Using the right selectors ensures clean, maintainable, and efficient CSS. -->

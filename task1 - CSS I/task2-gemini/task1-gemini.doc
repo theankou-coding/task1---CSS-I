@@ -1,0 +1,43 @@
+CSS: Cascading Style Sheets
+CSS stands for Cascading Style Sheets. It's a language used to style HTML elements. 
+It controls the look and layout of a web page, including colors, fonts, spacing, and more.
+
+Role of CSS in Web Development
+Separation of Concerns: CSS allows for a clean separation of content (HTML) and presentation (CSS), making websites easier to maintain and update.
+Consistent Appearance: CSS ensures a consistent look across different web browsers and devices.
+Enhanced User Experience: Well-designed CSS can improve the overall user experience by making websites more visually appealing and easier to navigate.
+
+=====================HTML===================
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First CSS Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to my website!</h1>
+    <p>This is a paragraph of text.</p>
+</body>
+</html>
+
+=====================CSS===================
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+}
+
+p {
+    color: black;
+    font-size: 24px;
+}
+
+How it works:
+
+The HTML document includes a <link> element to link the styles.css file.
+The CSS rules in styles.css are applied to the corresponding HTML elements.
+The browser renders the page according to the styles defined in the CSS.
+This simple example demonstrates how CSS can be used to quickly and easily modify the appearance of a web page.
